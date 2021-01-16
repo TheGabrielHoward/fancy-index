@@ -57,7 +57,7 @@
       titleText = window.location.host;
     }
 
-    titleText = `Index of ${titleText}`;
+    titleText = `${titleText}`;
 
     const container = document.createElement('div');
     container.id = 'page-header';

@@ -32,7 +32,7 @@ AddEncoding gzip svgz
 
   # IGNORE THESE FILES
   IndexIgnoreReset ON
-  IndexIgnore .ftpquota .DS_Store .git desktop.ini
+  IndexIgnore .ftpquota .DS_Store .git desktop.ini $RECYCLE.BIN
 
   # DEFAULT ICON
   DefaultIcon /fancy-index/icons/file-text.svg
@@ -42,8 +42,8 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/nodejs.svg node_modules
   AddIcon /fancy-index/icons/file-directory.svg ^^DIRECTORY^^
 
-  # SPECIFIC FILE ICONS
-  # https://github.com/file-icons/source
+  # Icons
+  AddIcon /fancy-index/icons/OWNERS.svg OWNERS
   AddIcon /fancy-index/icons/LICENSE.svg LICENSE
   AddIcon /fancy-index/icons/VirtualBox.svg .ova .vbox
   AddIcon /fancy-index/icons/adobe-illustrator.svg .ai
@@ -71,7 +71,7 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/file-zip.svg .zip .z .gz .Z .tgz .tar.gz .tar .rar
   AddIcon /fancy-index/icons/gear.svg .htaccess .env .env-dev .env-production .env-staging
   AddIcon /fancy-index/icons/git.svg *.gitignore *.gitattributes
-  AddIcon /fancy-index/icons/gpm.svg .mp3 .flac
+  AddIcon /fancy-index/icons/music.svg .mp3 .flac
   AddIcon /fancy-index/icons/grunt.svg gruntfile.js Gruntfile.js
   AddIcon /fancy-index/icons/gulp.svg gulpfile.js Gulpfile.js
   AddIcon /fancy-index/icons/html.svg .html .htm
@@ -105,67 +105,6 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/xml.svg .xml
   AddIcon /fancy-index/icons/yaml.svg .yml .yaml
   AddIcon /fancy-index/icons/yarn.svg yarn.lock
-
-  # FILE DESCRIPTIONS
-  AddDescription "Adobe Portable Document Format" .pdf
-  AddDescription "Android Application" .apk
-  AddDescription "BitTorrent file" .torrent
-  AddDescription "Cascading Style Sheet" .css
-  AddDescription "Common Gateway Interface" .cgi
-  AddDescription "Configuration file" .conf
-  AddDescription "DocType Definition" .dtd
-  AddDescription "Email data" .eml .mbox
-  AddDescription "Extensible Markup Language" .xml
-  AddDescription "GZIP compressed TAR archive" .tgz .tar.gz
-  AddDescription "GZIP compressed archive" .Z .z .gz .zip
-  AddDescription "Graphic Interchange Format" .gif
-  AddDescription "Hypertext Markup Language" .html .shtml .htm
-  AddDescription "Java code"  .java
-  AddDescription "JavaScript Object Notation" .json
-  AddDescription "JavaScript" .js
-  AddDescription "Joint Photographics Experts Group" .jpg .jpeg .jpe
-  AddDescription "MPEG Layer 3 Format" .mp3
-  AddDescription "MPEG Layer 4 Format" .mp4
-  AddDescription "Mac OS X shell script" .command
-  AddDescription "Mac OS X terminal" .term
-  AddDescription "Makefile" .mk
-  AddDescription "Markdown" .md
-  AddDescription "Microsoft Excel document" .xls .xlsx
-  AddDescription "Microsoft PowerPoint document" .pptx .pps
-  AddDescription "Microsoft Word document" .doc .docx
-  AddDescription "OpenDocument Chart" .odc
-  AddDescription "OpenDocument Database" .odb
-  AddDescription "OpenDocument Formula" .odf
-  AddDescription "OpenDocument Graphics Template" .otg
-  AddDescription "OpenDocument Graphics" .odg
-  AddDescription "OpenDocument Image" .odi
-  AddDescription "OpenDocument Presentation Template" .otp
-  AddDescription "OpenDocument Presentation" .odp
-  AddDescription "OpenDocument Spreadsheet Template" .ots
-  AddDescription "OpenDocument Spreadsheet" .ods
-  AddDescription "OpenDocument Text Master" .odm
-  AddDescription "OpenDocument Text Template" .ott
-  AddDescription "OpenDocument Text" .odt
-  AddDescription "PHP: Hypertext Preprocessor script" .php  .php3 .php4
-  AddDescription "PHP: Hypertext Preprocessor source code" .phps
-  AddDescription "Plain text file" .txt .nfo .faq .readme
-  AddDescription "Portable Network Graphic" .png
-  AddDescription "PureBasic file" .pb
-  AddDescription "RAR compressed archive" .rar
-  AddDescription "SASS: Syntactically Awesome Stylesheets" .sass
-  AddDescription "SCSS: Sassy Cascading Style Sheet" .scss
-  AddDescription "Scalable Vector Graphic" .svg
-  AddDescription "SubRip subtitles format" .srt
-  AddDescription "TAR compressed archive" .tar
-  AddDescription "Travis configuration" .travis
-  AddDescription "Unix man page" .man
-  AddDescription "Unix shell script" .sh .shar .csh .ksh .command
-  AddDescription "Vector graphic" .ps .ai .eps
-  AddDescription "Win32 compressed HTML help" .chm
-  AddDescription "Windows executable file" .exe
-  AddDescription "Windows link" .lnk .url
-  AddDescription "YAML: Yet Another Markup Language" .yaml .yml
-  AddDescription "ZIP compressed archive" .zip
 
   # DEFAULT DESCRIPTION
   # AddDescription "[<span class='description'>Unknown item</span>]" *
