@@ -32,7 +32,7 @@ AddEncoding gzip svgz
 
   # IGNORE THESE FILES
   IndexIgnoreReset ON
-  IndexIgnore .ftpquota .DS_Store .git
+  IndexIgnore .ftpquota .DS_Store .git desktop.ini
 
   # DEFAULT ICON
   DefaultIcon /fancy-index/icons/file-text.svg
@@ -47,6 +47,7 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/file-binary.svg .com .exe
   AddIcon /fancy-index/icons/file-code.svg .c .h .mustache .rust .source .apache .yml .jade
   AddIcon /fancy-index/icons/file-media.svg .png .jpg .jpeg .webp .gif .bmp .mp4 .webm .ogv .mov .ico
+  AddIcon /fancy-index/icons/gpm.svg .mp3 .flac
   AddIcon /fancy-index/icons/file-pdf.svg .pdf
   AddIcon /fancy-index/icons/file-text.svg .txt .srt README readme Procfile
   AddIcon /fancy-index/icons/file-zip.svg .zip .z .gz .Z .tgz .tar.gz .tar .rar
@@ -56,7 +57,7 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/css.svg .css
   AddIcon /fancy-index/icons/html.svg .html .htm
   AddIcon /fancy-index/icons/coffee.svg .coffee
-  AddIcon /fancy-index/icons/java.svg .java
+  AddIcon /fancy-index/icons/java.svg .java .jar .smali
   AddIcon /fancy-index/icons/markdown.svg .markdown .md
   AddIcon /fancy-index/icons/eslint.svg *.eslintignore *.eslintrc.js *.eslintrc.json *.eslintrc *.eslintrc.yml
   AddIcon /fancy-index/icons/webpack.svg webpack.config.js
@@ -90,18 +91,26 @@ AddEncoding gzip svgz
   AddIcon /fancy-index/icons/adobe-photoshop.svg .psd
   AddIcon /fancy-index/icons/adobe-illustrator.svg .ai
   AddIcon /fancy-index/icons/stylus.svg .styl
-  AddIcon /fancy-index/icons/terminal.svg .sh .bash
+  AddIcon /fancy-index/icons/sh.svg .sh .bash
   AddIcon /fancy-index/icons/database.svg .sql .mysql .sqlite .dsql .db
   AddIcon /fancy-index/icons/vagrant.svg vagrantfile Vagrantfile
   AddIcon /fancy-index/icons/file-word.svg .doc .docx
   AddIcon /fancy-index/icons/file-excel.svg .xls .xlsx
+  AddIcon /fancy-index/icons/file-powerpoint.svg .pptx .pps
   AddIcon /fancy-index/icons/yaml.svg .yml .yaml
   AddIcon /fancy-index/icons/brainfuck.svg .b
   AddIcon /fancy-index/icons/cobol.svg .cbl .cob .cpy
   AddIcon /fancy-index/icons/docker.svg docker-compose.yml
   AddIcon /fancy-index/icons/VirtualBox.svg .ova .vbox
+  AddIcon /fancy-index/icons/protobuf.svg .pb
+  AddIcon /fancy-index/icons/makefile.svg .mk .bp
+  AddIcon /fancy-index/icons/LICENSE.svg LICENSE
 
   # FILE DESCRIPTIONS
+  AddDescription "PureBasic file" .pb
+  AddDescription "Makefile" .mk
+  AddDescription "Markdown" .md
+  AddDescription "Android Application" .apk
   AddDescription "MPEG Layer 3 Format" .mp3
   AddDescription "MPEG Layer 4 Format" .mp4
   AddDescription "SubRip subtitles format" .srt
@@ -127,6 +136,7 @@ AddEncoding gzip svgz
   AddDescription "Email data" .eml .mbox
   AddDescription "Microsoft Word document" .doc .docx
   AddDescription "Microsoft Excel document" .xls .xlsx
+  AddDescription "Microsoft PowerPoint document" .pptx .pps
   AddDescription "PHP: Hypertext Preprocessor script" .php  .php3 .php4
   AddDescription "PHP: Hypertext Preprocessor source code" .phps
   AddDescription "JavaScript Object Notation" .json
