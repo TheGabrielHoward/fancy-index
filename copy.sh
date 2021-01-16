@@ -1,1 +1,1 @@
-cp .htaccess -R ../.htaccess
+cp .htaccess ../.htaccess
