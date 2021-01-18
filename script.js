@@ -66,7 +66,6 @@
     container.appendChild(h1);
 
     document.body.insertBefore(container, document.body.firstChild);
-    document.title = titleText;
   }
 
   /**
